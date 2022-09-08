@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+
+#edit_btn, #delete_btn, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#edit_btn, #delete_btn, #download_btn, .sidebar_btn, #submit_btn {
+	background-color: rgb(162, 162, 255);
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    font-style: oblique;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    padding-top: 10px;
+    /*box-shadow : 0px 4px 8px 2px #001831;*/
+}
+
+.sidebar_btn {
+    width: 40px;
+}
+
+#edit_btn {
+	width: 100px;
+}
+
+#delete_btn, #download_btn, #submit_btn {
+	width:100px;
+	padding-top:0;
+}
+
+#sidebar:not(:hover) .sidebar_btn {
+    animation-name: button_in;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+#sidebar:hover .sidebar_btn {
+	animation-name: button_out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button_out {
+	from {
+		width: 40px;
+	}
+	to {
+		width: 100px;
+	}
+}
+
+@keyframes button_in {
+	from {
+		width: 100px;
+	}
+	to {
+		width: 40px;
+	}
+}
+
+
+.sidebar_btn:active {
+	background-color: rgb(72, 72, 255);
+}
+
+#download_btn:active {
+	background-color: rgb(72, 72, 255);
+}

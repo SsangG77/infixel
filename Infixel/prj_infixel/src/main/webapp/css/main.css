@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+body {
+	margin : 0;
+}
+
+
+.post_info_bg {
+	opacity: 0;
+}
+
+.post_info a {
+	color: white;
+}
+
+.post:hover .post_info_bg {
+	animation-duration: 0.5s;
+	animation-name: showInfo;
+	animation-fill-mode: forwards;
+}
+
+.post:not(hover) .post_info_bg {
+	animation-duration: 0.5s;
+	animation-name: hideInfo;
+	animation-fill-mode: forwards;
+}
+
+@keyframes showInfo {
+	from {
+		opacity : 0;
+	}
+	to {
+		opacity : 1;
+	}
+}
+
+@keyframes hideInfo {
+	from {
+		opacity : 1;
+	}
+	to {
+		opacity : 0;
+	}
+}

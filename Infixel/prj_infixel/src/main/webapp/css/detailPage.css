@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+body {
+		margin: 0;
+	}
+#background {
+	margin-left: 175px;
+	display: flex;
+}
+img {
+	width: 100%;
+	border-radius: 15px;
+	box-shadow : 0px 4px 8px 2px grey;
+}
+
+#reply_text {
+	height: 30px;
+	width: 80%;
+}
+
+#reply_btn {
+	height: 35px;
+}
+
+table {
+	border-top: 1px solid #444444;
+	border-collapse: collapse;
+	width: 100%;
+}
+th:first-child {
+	width: 60%;
+}
+th, td {
+	border-bottom: 1px solid #444444;
+	padding: 10px;
+}
+ 
+#logout_btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	
+#info_box {
+	width: 30%;
+}
+
+#img_box {
+	width: 70%;
+}
+ 
+#detail_page {
+	display: flex;
+ 	margin-top: 50px;
+ 	width: 90%;
+ 	padding: 20px;
+}
+ 
+ #info_box, #img_box {
+ 	padding: 15px;
+ 	
+ }
+ 
+ #title_box, #other_box, #reply_box {
+ 	margin-bottom: 20px;
+ 	padding: 25px;
+ 	border-radius: 10px;
+ 	box-shadow : 0px 4px 8px 2px grey;
+ 	background-color: white;
+ 	color: black;
+ 	overflow: hidden;
+ }
+ 	
+ #title_box > span {
+ 	font-size: 30px;
+ 	font-weight: 700;
+ }
+ 
+ .info {
+ 	font-size: 17px;
+ 	margin-bottom: 20px;
+ }
+ 
+ .info_title {
+ 	font-size: 20px;
+ 	color: purple;
+ }
+ 
+ #tag_box {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	margin-bottom: 10px;
+ }
+ 
+ .tag {
+ 	background-color: #BF7CC118;
+ 	padding: 7px;
+ 	border-radius: 5px;
+ 	margin: 5px;
+ 	font-size: 15px;
+ }
+ 
+ #reply_form_box {
+ 	margin-bottom: 20px;
+ }
+ 
+ #button_box {
+ 	display: flex;
+ }
+ 
+ #delete_btn, #edit_btn, #download_btn {
+ 	margin-right: 10px;
+ }

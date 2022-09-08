@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+:root {
+		--shadow-color: #80808080;
+		--purple1: #BF7CC1;
+		--purple2: #9D4CA0;
+		--purple3: #862F89;
+		--purple4: #862F89;
+		--purple5: #5A095D;
+	}
+	
+	
+	#login_box_background {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		overflow: hidden;
+	}
+	
+	#form_box {
+		box-shadow : 0 4px 20px 2px var(--purple1);
+		margin: 5px;
+		padding: 5px;
+		border-radius: 15px;
+		position: relative;
+		top: 0;
+		/*
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		*/
+	}
+	#login_box {
+		background-color: white;
+		border: 1px solid var(--shadow-color);
+		border-radius : 15px;
+		overflow: hidden;
+		padding: 10px;
+		width: 400px;
+	}
+	
+	#link_box {
+		display: flex;
+		justify-content: space-around;
+		padding: 15px 10px 0 10px;
+	}
+	
+	#link_box > div {
+		padding: 15px 5px 15px 5px;
+	}
+	
+	#link_box > div:hover {
+		background-color: #BF7CC118;
+	}
+	
+	a {
+		color : var(--purple1);
+	}
+	a:link {
+	  color : var(--purple1);
+	}
+	
+	.input, .btn {
+		display: flex;
+		justify-content: space-around;
+		margin: 15px 5px;
+	}
+	
+	#id, #pw, #name, #nickname, #birthday {
+		outline: none;
+		border-bottom: 2px solid var(--shadow-color);
+		border-top : none;
+		border-left : none;
+		border-right : none;
+	}
+	
+	#name {
+		outline: none;
+		border-bottom: 2px solid var(--shadow-color);
+		border-top : none;
+		border-left : none;
+		border-right : none;
+	}
+	
+	#id:focus, #pw:focus, #name:focus, #nickname:focus, #birthday:focus {
+		border-bottom: 2px solid var(--purple4);
+	}
+	
+	#login_btn {
+		width: 91%;
+		height: 35px;
+		border: none;
+		border-radius: 6px;
+		background-color: var(--purple1);
+		color: white;
+	}
+	
+	#login_btn:focus {
+		background-color: var(--purple5);
+	}
+	
+	.input > input {
+		width: 90%;
+	}
+	::placeholder {
+		color: var(--purple3);
+	}
+	
+	#background {
+		animation-duration: 50s;
+		animation-name: slidedown;
+		animation-iteration-count: infinite;
+	}
+	
+	@keyframes slidedown {
+		0% {
+			margin-top: 0%;
+		}
+		50% {
+			margin-top: 20%;
+		}
+		100% {
+			margin-top : 0%;
+		}
+	}
+    
+    
+    /*
+    #birth_window {
+    	position: absolute;
+    	background: white;
+    	border : 1px solid var(--purple3);
+    	border-radius: 5px;
+    	padding: 5px;
+    	color: var(--purple3);
+    	font-size: 13px;
+    	left: 27px;
+    	top: 143px;
+    }
+    #birthday:focus-within + div#birth_window {
+    	display: block;
+    }
+    */
+  
+    #birthday {
+    	color: var(--purple3);
+	}
+    
+   
+    
